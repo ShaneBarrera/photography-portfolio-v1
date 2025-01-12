@@ -382,11 +382,11 @@ h3 {
     font-size: 1.4rem;
   }
   .lead {
-    color: #ffffff;
+    color: #6b6b6b;
     padding: auto;
   }
   h2 {
-    color: white;
+    color: rgb(99, 99, 99);
   }
   .container {
     padding: 0 1rem;
@@ -473,7 +473,7 @@ h3 {
   }
 
   .btn-down-white {
-    color: white;
+    color: rgb(125, 125, 125);
   }
 
   .btn-down:hover {
@@ -493,6 +493,6 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 600;
-    color: #ffffff;
+    color: rgb(114, 114, 114); 
   }
 }
