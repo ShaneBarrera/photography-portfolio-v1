@@ -378,6 +378,12 @@ h3 {
 
 /* Mobile */
 @media (max-width: 576px) {
+  #header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, -1)),
+      url("../images/nature/compress/nature-79.jpg") center/cover no-repeat fixed;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
   body {
     font-size: 1.4rem;
   }
