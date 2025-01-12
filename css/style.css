@@ -24,7 +24,8 @@ body {
   line-height: 1.6;
 }
 
-button, .btn {
+button,
+.btn {
   cursor: pointer;
   border: none;
   background: transparent;
@@ -50,7 +51,8 @@ img.lazy {
   transition: opacity 0.75s ease-in-out;
 }
 
-img.lazy.visible, img.lazy:not(.hidden) {
+img.lazy.visible,
+img.lazy:not(.hidden) {
   opacity: 1;
   visibility: visible;
 }
@@ -70,7 +72,9 @@ img.lazy.hidden {
   min-height: 100vh;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 0;
   line-height: 1.3;
   margin-bottom: 2rem;
@@ -369,5 +373,126 @@ h1, h2, h3 {
   .contact-right {
     padding-left: 3rem;
     width: 40%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  body {
+    font-size: 1.4rem;
+  }
+  .lead {
+    color: #ffffff;
+    padding: auto;
+  }
+  h2 {
+    color: white;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header-content h1 {
+    font-size: 3rem;
+  }
+
+  .header-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left form {
+    width: 100%;
+  }
+
+  .footer-content ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .floating-menu {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 1000;
+  }
+  .floating-menu a {
+    display: block;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    transform: rotate(-90deg);
+    transform-origin: left center;
+    transition: all 0.3s ease;
+  }
+  .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1001;
+    margin-left: -45px;
+  }
+  .submenu a {
+    transform: none;
+    color: #333;
+    text-align: left;
+    padding: 5px 10px;
+  }
+  /* about */
+  .about-left {
+    margin-bottom: 4rem;
+    height: 280px;
+    overflow: hidden;
+  }
+
+  .btn-down {
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: var(--transition);
+  }
+
+  .btn-down-white {
+    color: white;
+  }
+
+  .btn-down:hover {
+    opacity: 1.5;
+    transform: translateY(5px);
+  }
+
+  .btn-down-white {
+    color: var(--light-color);
+  }
+
+  .title {
+    margin-bottom: 5rem;
+  }
+
+  .title h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #ffffff;
   }
 }
