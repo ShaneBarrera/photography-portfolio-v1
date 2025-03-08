@@ -1,6 +1,6 @@
 Shane Barrera
 Photography Portfolio
-1/12/25
+Last updated: 3/8/25
 
 Typescript animation provided from: https://github.com/awran5/typewriting
 
